@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WebSlide Navigation System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Vendor -->
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Vendor -->
+
+  <!--Main Menu File-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link id="effect" rel="stylesheet" type="text/css" media="all"
+    href="assets/webslidemenu/dropdown-effects-fade-down.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="assets/webslidemenu/webslidemenu.css" />
+
+  <link id="theme" rel="stylesheet" type="text/css" media="all" href="assets/webslidemenu/color-skins-white-red.css" />
+
+  <!-- Include Below JS After Your jQuery.min File -->
+  <script type="text/javascript" src="assets/js/webslidemenu.js"></script>
+  <!--Main Menu File-->
+
+
+  <!--For Demo Only (Remove below css and Javascript) -->
+  <link rel="stylesheet" href="assets/webslidemenu/demo.css" />
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      $("a[data-theme]").click(function () {
+        $("head link#theme").attr("href", $(this).data("theme"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $("a[data-effect]").click(function () {
+        $("head link#effect").attr("href", $(this).data("effect"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+    });
+  </script>
+  <!--For Demo Only (Remove below css and Javascript) -->
+<style>
+  input[type="checkbox"] {
+  background-color: #fff;
+  margin-left: 6px;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+</style>
+</head>
+
+<body>
+
+  <!-- Mobile Header -->
+  <div class="wsmobileheader clearfix ">
+    <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+    <span class="smllogo"><img src="assets/images/menu-logo.png" width="80" alt="" /></span>
+    <a href="tel:123456789" class="callusbtn"><i class="fas fa-phone"></i></a>
+  </div>
+  <!-- Mobile Header -->
+
+
+
+  <div class="wsmainfull clearfix">
+    <div class="wsmainwp clearfix">
+
+
+      <div class="desktoplogo"><a href="index.html"><img src="assets/images/newlogo.png" height="30px" alt=""></a></div>
+      <!--Main Menu HTML Code-->
+      <nav class="wsmenu clearfix">
+        <ul class="wsmenu-list">
+          <li aria-haspopup="true" class="rightmenu">
+            <form class="topmenusearch">
+              <input placeholder="Search...">
+              <button class="btnstyle"><i class="searchicon fas fa-search"></i></button>
+            </form>
+          </li>
+          <li aria-haspopup="true"><a href="#">Medicines <span class="wsarrow"></span></a>
+            <ul class="sub-menu">
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Health Products </a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>covid products</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>skin care</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>body care</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>baby care</a>
+                <ul class="sub-menu">
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4</a>
+                    <ul class="sub-menu">
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4 Sub</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li aria-haspopup="true"><a href="#">Doctors <span class="wsarrow"></span></a>
+            <ul class="sub-menu">
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Top Doctors </a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Find near Doctor</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Carodilogy</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>General Physician</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Neuro Surgin</a>
+                <ul class="sub-menu">
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4</a>
+                    <ul class="sub-menu">
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4 Sub</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li aria-haspopup="true"><a href="#">LabTests <span class="wsarrow"></span></a>
+            <ul class="sub-menu">
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Covid Test</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Full Body checkup</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Sugar Test</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Blood Test</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>BP Test</a>
+                <ul class="sub-menu">
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4</a>
+                    <ul class="sub-menu">
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3 Sub</a></li>
+                      <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4 Sub</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li aria-haspopup="true"><a href="#">Upload</a>
+           
+          </li>
+
+          <li aria-haspopup="true"><a href="#">Login/Signup</a>
+           
+          </li>
+
+          <li class="carticon menu-icon"><a href="#"><i class="fas fa-map-marker"></i><span
+            class="mobiletext">Location</span></a>
+      </li>
+
+          <li class="carticon menu-icon"><a href="#"><i class="fas fa-shopping-basket"></i><em class="roundpoint">8</em><span
+                class="mobiletext">Shopping Cart</span></a>
+          </li>
+
+
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <div class='row'>
+      <div class='col-md-12'>
+        <div class=" title pill-bg">
+          <h3>Covid Essentials</h3>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="personal_medi sub-cat mb-3">
+
+          <a href="filters-categories.html">
+            <img src="assets/images/mask.png" alt="" />
+          </a>
+          <div class="hc_tit">
+            <h3 class='text-center'>Masks</h3>
+          </div>
+          </Link>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="personal_medi sub-cat mb-3">
+
+          <a href="filters-categories.html">
+            <img src="assets/images/dettol.png" alt="" />
+          </a>
+          <div class="hc_tit">
+            <h3 class='text-center'>Hand Wash</h3>
+          </div>
+          </Link>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="personal_medi sub-cat mb-3">
+
+          <a href="filters-categories.html">
+            <img src="assets/images/sani.png" alt="" />
+          </a>
+          <div class="hc_tit">
+            <h3 class='text-center'>Sanitizers</h3>
+          </div>
+          </Link>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="personal_medi sub-cat mb-3">
+
+          <a href="filters-categories.html">
+            <img src="assets/images/face-wash.png" alt="" />
+          </a>
+          <div class="hc_tit">
+            <h3 class='text-center'>Face Wash</h3>
+          </div>
+          </Link>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="personal_medi sub-cat mb-3">
+
+          <a href="filters-categories.html">
+            <img src="assets/images/face-wash.png" alt="" />
+          </a>
+          <div class="hc_tit">
+            <h3 class='text-center'>Face Wash</h3>
+          </div>
+          </Link>
+
+        </div>
+      </div>
+
+      
+      <div class="col-md-3">
+        <div class="personal_medi sub-cat mb-3">
+
+          <a href="filters-categories.html">
+
+            <img src="assets/images/sani.png" alt="" />
+          </a>
+          <div class="hc_tit">
+            <h3 class='text-center'>Sanitizers</h3>
+          </div>
+          </Link>
+
+        </div>
+      </div>
+
+      
+      <div class="col-md-3">
+        <div class="personal_medi sub-cat mb-3">
+
+          <a href="filters-categories.html">
+
+            <img src="assets/images/dettol.png" alt="" />
+          </a>
+          <div class="hc_tit">
+            <h3 class='text-center'>Hand Wash</h3>
+          </div>
+          </Link>
+
+        </div>
+      </div>
+
+      
+      <div class="col-md-3">
+        <div class="personal_medi sub-cat mb-3">
+
+          <a href="filters-categories.html">
+
+            <img src="assets/images/mask.png" alt="" />
+          </a>
+          <div class="hc_tit">
+            <h3 class='text-center'>Masks</h3>
+          </div>
+          </Link>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+
+          <div id="footer-id">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="footer-about">
+                    <h3>PillBox</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+                    <a href="javascript:void(0);" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="javascript:void(0);" class="twitter"><i class="fa fa-twitter" aria-hidden="true" ></i></a>
+                    <a href="javascript:void(0);" class="instagram"><i class="fa fa-instagram" aria-hidden="true" ></i></a>
+                    <a href="javascript:void(0);" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true" ></i></a>
+                  </div>
+                </div>
+                <div class="col-md-2 ">
+                  <div class="footer-link">
+                    <h3>Useful Links</h3>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Pharmacy</a></li>
+                      <li><a href="#">LabTests</a></li>
+                      <li><a href="#">Doctors</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2 ">
+                  <div class="footer-link">
+                    <h3>Products</h3>
+                    <ul>
+                      <li><a href="#">Health Products</a></li>
+                      <li><a href="#">Medicines</a></li>
+                      <li><a href="#">Baby care Products</a></li>
+                      <li><a href="#">Skin Products</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 ">
+                  <div class="footer-link">
+                    <h3>Doctors</h3>
+                    <ul>
+                      <li><a href="#">Specialists</a></li>
+                      <li><a href="#">Home nursing</a></li>
+                      <li><a href="#">Emergency </a></li>
+                      <li><a href="#">Helpus</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="footer-block">
+                <div class="row">
+                  <div class="col-md-4 ml">
+                    <div class="footer-mailicon">
+                      <a href="javascript:void(0);"><i class="fa fa-phone" aria-hidden="true" ></i></a>
+                    </div>
+                    <div class="footer-mailtext">
+                      <h4>+91 9876543210</h4>
+                      <p>Make a call</p>  
+                    </div>
+                  </div>
+                  <div class="col-md-4 ml" style="background-color: #680a78e8">
+                    <div class="footer-mailicon">
+                      <a href="javascript:void(0);"><i class="fa fa-envelope" aria-hidden="true" ></i></a>
+                    </div>
+                    <div class="footer-mailtext">
+                      <h4>info@gmail.com</h4>
+                      <p>Drop your line</p>  
+                    </div>
+                  </div>
+                  <div class="col-md-4 ml">
+                    <div class="footer-mailicon">
+                      <a href="javascript:void(0);"><i class="fa fa-users" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="footer-mailtext">
+                      <h4>order Now</h4>
+                      <p>Delivery is available at your home</p>  
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="futer">
+                      <div class="futer-by1">
+                        <p><i class="fa fa-copyright" aria-hidden="true" ></i> 2022<strong>PillBox</strong> All Rights Reserved.</p>
+                      </div>
+                      <div class="futer-by2">
+                        <p> Designed By <a href="https://svapps.in/">  <strong> SVAPPS</strong></a></p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    
+</body>
+
+</html>
+
